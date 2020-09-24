@@ -1,0 +1,21 @@
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Main page</title>
+</head>
+<body>
+  <iframe src="https://test-yota.reksoft.ru/voice/rate-selector-iframe" width="100%" scrolling="no"></iframe>
+  <script>
+    var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+    var eventer = window[eventMethod];
+    var messageEvent = eventMethod === "attachEvent" ? "onmessage" : "message";
+
+    eventer(messageEvent, function(e) {
+      if (e.data.hasOwnProperty('setHeight')) {
+        var height = e.data.setHeight;
+        document.querySelector('[src="' + e.data.url + '"]').style.height = height + 'px';
+      }
+    }, false);
+  </script>
+</body>
+</html>
