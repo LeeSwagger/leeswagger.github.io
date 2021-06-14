@@ -2,20 +2,22 @@
 <head>
   <meta charset="UTF-8" />
   <title>Main page</title>
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script defer src="/assets/scripts.js"></script>
 </head>
 <body>
-  <iframe src width="100%" scrolling="no"></iframe>
-  <script>
-    var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
-    var eventer = window[eventMethod];
-    var messageEvent = eventMethod === "attachEvent" ? "onmessage" : "message";
-
-    eventer(messageEvent, function(e) {
-      if (e.data.hasOwnProperty('setHeight')) {
-        var height = e.data.setHeight;
-        document.querySelector('[src="' + e.data.url + '"]').style.height = height + 'px';
-      }
-    }, false);
-  </script>
+  <h1>Test requestly</h1>
+  <ol>
+    <li>requestly</li>
+    <li>overrides</li>
+    <li>performance cpu/network</li>
+    <li>performance recording</li>
+    <li>logpoints</li>
+    <li>copy object</li>
+    <li>css layout debugger</li>
+  </ol>
+  <button class="js-start-calculation" type="button">Calculate</button>
+  <script defer></script>
 </body>
 </html>

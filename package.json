@@ -1,0 +1,27 @@
+{
+  "name": "leeswagger.github.io",
+  "version": "1.0.0",
+  "description": "test project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeeSwagger/leeswagger.github.io.git"
+  },
+  "keywords": [
+    "test",
+    "site"
+  ],
+  "author": "aleksandr batalygin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeeSwagger/leeswagger.github.io/issues"
+  },
+  "homepage": "https://github.com/LeeSwagger/leeswagger.github.io#readme",
+  "devDependencies": {
+    "static-server": "^2.2.1"
+  }
+}

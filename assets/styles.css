@@ -1,0 +1,25 @@
+body {
+    background-color: teal;
+    color: white;
+}
+
+h1 {
+    margin: 50px 0;
+    font-size: 50px;
+    text-align: center;
+}
+
+ol {
+    display: block;
+    margin: auto;
+    width: 300px;
+    font-size: 20px;
+}
+
+button {
+    display: block;
+    margin: 30px auto 30px;
+    width: 200px;
+    font-size: 20px;
+    cursor: pointer;
+}
